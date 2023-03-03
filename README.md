@@ -21,7 +21,7 @@ Do you work on a team which claims to be agile?
 
 _hot take:_ Unexported code is anti-agile.
 
-Go read the agile software manifesto.[^1]
+Go read the agile software manifesto[^1].
 
 Every single one of those values suggests exporting as much as possible.
 
@@ -86,12 +86,12 @@ I'll answer my own question: None.
 
 ## why does this matter?
 
-Import cycles are not allowed by the Go compiler.
+Import cycles are not allowed by the Go compiler[^2].
 By creating too many packages you can easily put yourself into a situation where you need to shuffle things around just to prevent a cycle.
 
 ## See also
 
-* [^1] http://agilemanifesto.org
-* https://duckduckgo.com/?q=Go+import+cycles&t=osx&ia=web
-* https://go.dev/doc/modules/managing-dependencies
-* https://dev.to/jrwren/how-to-write-go-47nk
+[^1]: http://agilemanifesto.org
+[^2]: https://duckduckgo.com/?q=Go+import+cycles&t=osx&ia=web
+[^3]: https://go.dev/doc/modules/managing-dependencies
+[^4]: https://dev.to/jrwren/how-to-write-go-47nk
