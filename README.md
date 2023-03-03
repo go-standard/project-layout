@@ -4,7 +4,7 @@ Standard Go Project Layout
 # Notes
 
 I created this nearly empty repo as a joke, but I continue to see bad patterns in packages in workplaces (namely mine).
-Here are some rules which may help you.
+Here are some rules which may help you[^4].
 
 ## main
 
@@ -87,7 +87,7 @@ I'll answer my own question: None.
 ## why does this matter?
 
 Import cycles are not allowed by the Go compiler[^2].
-By creating too many packages you can easily put yourself into a situation where you need to shuffle things around just to prevent a cycle.
+By creating too many packages you can easily put yourself into a situation where you need to shuffle things around just to prevent a cycle[^3].
 
 ## See also
 
