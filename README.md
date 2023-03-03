@@ -8,15 +8,27 @@ Here are some rules which may help you.
 
 ## main
 
-Main package in the root it ok, but probably not what you want longer term. Make your root package something importable and place your main package in a `cmd/<execname>` directory.
+Main package in the root is ok, but probably not what you want longer term.
+Make your root package something importable and place your main package in a `cmd/<execname>` directory.
+
+**For many small to medium size projects these are the only 2 packages you need.**
 
 ## internal
 
 Unless you are shipping code to external teams, you probably don't need this and it will be more trouble than it is worth.
 
+Do you work on a team which claims to be agile?
+
+_hot take:_ Unexported code is anti-agile.
+
+Go read the agile software manifesto.[^1]
+
+Every single one of those values suggests exporting as much as possible.
+
 ## pkg
 
-Never. Any package you put into a `pkg` directory can be moved the root.
+Never.
+Any package you put into a `pkg` directory can be moved the root.
 
 > But Jay, I really want pkg..
 
@@ -79,6 +91,7 @@ By creating too many packages you can easily put yourself into a situation where
 
 ## See also
 
+* [^1] http://agilemanifesto.org
 * https://duckduckgo.com/?q=Go+import+cycles&t=osx&ia=web
 * https://go.dev/doc/modules/managing-dependencies
 * https://dev.to/jrwren/how-to-write-go-47nk
