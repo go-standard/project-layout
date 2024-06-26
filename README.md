@@ -8,8 +8,14 @@ Here are some rules which may help you[^4].
 
 ## main
 
-Main package in the root is ok, but probably not what you want longer term.
-Make your root package something importable and place your main package in a `cmd/<execname>` directory.
+Main package in the root is great, it makes for the shortest and cleanest install/run: `go install github.com/you/project@latest`
+which is typically the priority if you do have a cli or server to ship. Pure libraries obviously have no main at the root.
+
+If you do have both, you could move the main out of the way in a child directory (people like cmd/execname/ but the cmd/ part is actually
+not needed) _or_ move the library into a directory that will make
+importing and using it readable. 
+Consider also you may have more than 1 library package to publish in which case lib1/ and lib2/ makes total sense
+and keep the top level for the main binary.
 
 **For many small to medium size projects these are the only 2 packages you need.**
 
