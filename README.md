@@ -9,7 +9,7 @@ Here are some rules which may help you[^4].
 ## main
 
 Main package in the root is great, it makes for the shortest and cleanest install/run: `go install github.com/you/project@latest`
-which is typically the priority if you do have a cli or server to ship. Pure libraries obvious have no main at the root.
+which is typically the priority if you do have a cli or server to ship. Pure libraries obviously have no main at the root.
 
 If you do have both, you could move the main out of the way in a child directory (people like cmd/execname/ but the cmd/ part is actually
 not needed) _or_ move the library into a directory that will make
