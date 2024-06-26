@@ -13,8 +13,9 @@ which is typically the priority if you do have a cli or server to ship. Pure lib
 
 If you do have both, you could move the main out of the way in a child directory (people like cmd/execname/ but the cmd/ part is actually
 not needed) _or_ move the library into a directory that will make
-importing and using it readable. consider also you may have more than 1 package to publish in which case lib1/ and lib2/ makes total sense
-and keep the top level for the main binary
+importing and using it readable. 
+Consider also you may have more than 1 library package to publish in which case lib1/ and lib2/ makes total sense
+and keep the top level for the main binary.
 
 **For many small to medium size projects these are the only 2 packages you need.**
 
