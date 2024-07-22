@@ -6,6 +6,8 @@ Standard Go Project Layout
 I created this nearly empty repo as a joke, but I continue to see bad patterns in packages in workplaces (namely mine).
 Here are some rules which may help you[^4].
 
+The official information is [go.dev/doc/modules/layout](https://go.dev/doc/modules/layout)
+
 ## main
 
 Main package in the root is great, it makes for the shortest and cleanest install/run: `go install github.com/you/project@latest`
@@ -49,7 +51,7 @@ Those functions, types, and methods which you think belong in a separate util (o
 > But Jay, I'm more conformtable with...
 
 Let me guess, you have more experience writing Java, Python, Ruby, JavaScript, TypeScript, or C# than you do writing C, C++, or Perl.
-Please consider that package structuring is a 
+Please consider that package structuring is more an art than hard rules.
 
 ## kubernetes is not a good Go code reference project
 
